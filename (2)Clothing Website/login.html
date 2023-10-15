@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/website-icon.avif">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    </link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="Notice">
+        <div class="imp-notice"></div>
+        <p class="imp-notice-p">Notice: This website is built for entertainment purpose only. This is not the official
+            website for buying clothes.</p>
+    </div>
+
+    <h3 class="warning">
+        This Website is only built for a mobile phone, it won't work on any device above 414px of Resolution.
+    </h3>
+
+    <nav class="navbar">
+        <div class="navbar-toggler">
+            <div class="icon"><i class="fa-solid fa-bars hamburger-icon"></i></div>
+        </div>
+        <div class="navbar-logo">
+            <img src="Images/navbar-logo.jpg" class="navbarlogo" alt="">
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button class="search-btn">Search</button>
+        </div>
+        <div class="nav-links">
+            <div class="close-icon"></div>
+            <ul>
+                <div class="menu-heading">
+                    <h3>MENU</h3>
+                </div>
+                <li class="navlink1"><a href="home.html">Home</a></li>
+                <li class="navlink2"><a href="sale.html">Sale</a></li>
+                <li class="navlink3"><a href="N-Arrivals.html">New Arrivals</a></li>
+                <li class="navlink4"><a href="RTW.html">Ready to Wear</a></li>
+                <li class="navlink5"><a href="UnStitchedFabric.html">Unstitched Fabric</a></li>
+                <li class="navlink6"><a href="LuxuryPret.html">Luxury Pret</a></li>
+                <li class="navlink7"><a href="couture.html">Couture</a></li>
+                <li class="navlink8"><a href="bridal.html">Bridal</a></li>
+            </ul>
+        </div>
+        <div class="navbar-icons">
+            <div class="search-icon" title="Search"><i class="bi bi-search"></i></div>
+            <div class="truck-icon" title="Trach your Order"><a href="track-order.html"><i class="bi bi-truck"></i></a>
+            </div>
+            <div class="cart-icon" title="Cart">
+                <a href="cart.html"><i class="bi bi-cart"></a></i>
+                  <span class="red-dot"></span>
+              </div>
+            <div class="user-icon" title="Account"><a href="profile.html"><i class="bi bi-person-circle"></a></i></div>
+        </div>
+    </nav>
+
+    <div class="sign-in">
+        <div class="sign-in-heading">
+            <h5 class="h5">CUSTOMER LOGIN</h5>
+        </div>
+        <div class="registered-customer">
+            <h6 class="h6">REGISTERED CUSTOMER</h6>
+            <hr class="hr">
+            <p class="p">If you have an account, sign in with your email address.</p>
+            <div class="login-info">
+                <div class="error" id="error">
+                    <p class="inc-data"><i class="bi bi-x-circle-fill"></i>You entered incorrect data. Please try again</p>
+                </div>
+                <h6 class="h6 email">EMAIL <span class="red-star">*</span></h6>
+                <input type="email" name="" id="emailInput-login" class="email-input" required>
+                <h6 class="h6 password">PASSWORD <span class="red-star">*</span></h6>
+                <input type="password" name="" id="passwordInput-login" class="password-input" required>
+                <div class="show-password-checkbox">
+                    <input type="checkbox" id="passwordCheckbox-Login">
+                    <label for="passwordCheckbox-Login">Show Password</label>
+                </div>
+                <div class="sign-btn">
+                    <div id="spinner" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                    <button class="sign-in-btn" id="loginBtn">
+                       <span id="button-text-login">SIGN IN</span>
+                    </button>
+                    <p class="dont-acc">Don't have an Account? <a href="create-acc.html">Create an Account</a></p>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+        <footer class="footer">
+            <div class="newsletter">
+                <h6>SIGNUP FOR OUR <span>
+                    <h4 class="newsletter-heading">NEWSLETTER</h4>
+                  </span></h6>
+                <div class="newsletter-signup">
+                  <input type="text" name="" id="newsletter-email" class="newsletter-input" placeholder="Enter Email">
+                  <button class="news-input-btn" onclick="validateEmail()">SIGN UP</button>
+                </div>
+                <p id="error-message-newsletter">Please provide a valid Email Address</p>
+            </div>
+            <div class="follow-icons">
+                <h5 class="follow-heading">FOLLOW US</h5>
+                <div class="follow-us">
+                    <i class="fa-brands fa-facebook facebook" title="Facebook"></i>
+                    <i class="fa-brands fa-instagram instagram" title="Instagram"></i>
+                    <i class="fa-brands fa-twitter twitter" title="Twitter"></i>
+                    <i class="fa-solid fa-envelope email" title="Email"></i>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-link">
+                    <button class="dropdown-toggle" type="button" data-toggle="collapse" data-target="#aboutDropdown"
+                        aria-expanded="false">
+                        <div class="headings">
+                            <h6>COMPANY</h6>
+                        </div>
+                        <div class="signs">
+                            <span class="plus-minus">+</span>
+                        </div>
+                    </button>
+                    <div class="collapse" id="aboutDropdown">
+                        <ul class="dropdown-content">
+                            <a href="shipping-info.html" class="links">
+                                <li>
+                                    <p class="footer-link2">Shippinng Information</p>
+                                </li>
+                            </a>
+                            <a href="return-n-exchange.html" class="links">
+                                <li>
+                                    <p class="footer-link3">Return & Exchange</p>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-link">
+                    <button class="dropdown-toggle" type="button" data-toggle="collapse" data-target="#aboutDropdown2"
+                        aria-expanded="false">
+                        <div class="headings">
+                            <h6>HELP</h6>
+                        </div>
+                        <div class="signs">
+                            <span class="plus-minus">+</span>
+                        </div>
+                    </button>
+                    <div class="collapse" id="aboutDropdown2">
+                        <ul class="dropdown-content">
+                            <a href="track-order.html" class="links">
+                                <li>
+                                    <p class="footer-link1">Track your Order
+                                    <p>
+                                </li>
+                            </a>
+                            <a href="about-us.html" class="links">
+                                <li>
+                                    <p class="footer-link2">About Us
+                                    <p>
+                                </li>
+                            </a>
+                            <a href="find-store.html" class="links">
+                                <li>
+                                    <p class="footer-link3">Store Locator
+                                    <p>
+                                </li>
+                            </a>
+                            <a href="terms-conditions.html" class="links">
+                                <li>
+                                    <p class="footer-link4">Terms & Conditions
+                                    <p>
+                                </li>
+                            </a>
+                            <a href="privacy-policy.html" class="links">
+                                <li>
+                                    <p class="footer-link5">Privacy Policy
+                                    <p>
+                                </li>
+                            </a>
+                            <a href="FAQs.html" class="links">
+                                <li>
+                                    <p class="footer-link6">FAQs
+                                    <p>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-link">
+                    <button class="dropdown-toggle" type="button" data-toggle="collapse" data-target="#aboutDropdown3"
+                        aria-expanded="false">
+                        <div class="headings">
+                            <h6>CONTACT US</h6>
+                        </div>
+                        <div class="signs">
+                            <span class="plus-minus">+</span>
+                        </div>
+                    </button>
+                    <div class="collapse" id="aboutDropdown3">
+                        <ul class="dropdown-content">
+                            <div class="links">
+                                <li>
+                                    <p class="footer-linkemail">Email: <a
+                                            href="mailto:muhammadmudassir.090@gmail.com">Email me</a></p>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-link">
+                    <button class="dropdown-toggle" type="button" data-toggle="collapse" data-target="#aboutDropdown4"
+                        aria-expanded="false">
+                        <div class="headings">
+                            <h6>INFORMATION</h6>
+                        </div>
+                        <div class="signs">
+                            <span class="plus-minus">+</span>
+                        </div>
+                    </button>
+                    <div class="collapse" id="aboutDropdown4">
+                        <ul class="dropdown-content">
+                            <a href="privacy-policy.html" class="links">
+                                <li>
+                                    <p class="footer-link1">Privacy & Cookie</p>
+                                </li>
+                            </a>
+                            <a href="track-order.html" class="links">
+                                <li>
+                                    <p class="footer-link2">Order & Returns</p>
+                                </li>
+                            </a>
+                            <a href="return-n-exchange.html" class="links">
+                                <li>
+                                    <p class="footer-link3">Search Terms</p>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="credits">
+                <div class="rights">
+                    <p>Malaika. All rights reserved &copy; 2023</p>
+                </div>
+                <div class="made-by">
+                    <p>Made with <i class="fa-solid fa-heart"></i> by <a
+                            href="https://www.github.com/Mudasssirr">Mudassir Awan</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous">
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="app.js"></script>
+        <script type="module" src="profile.js"></script>
+</body>
+
+</html>

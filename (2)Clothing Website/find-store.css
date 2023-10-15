@@ -1,0 +1,74 @@
+/* FOR FIND STORE PAGE */
+
+.find-store{
+    margin-bottom: 50px;
+}
+
+.h4{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 22px !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    font-weight: 800 !important;
+}
+
+.h6{
+    text-align: center;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    margin-top: 50px !important;
+    margin-bottom: 10px !important;
+}
+
+.locator{
+    cursor: pointer;
+    color: #000;
+}
+
+.locator:active{
+    opacity: 0.7;
+}
+
+.stores{
+    overflow-y: scroll;
+    height: 450px;
+    width: 95%;
+    margin-left: 10px;
+    border: 1px solid gray !important;
+    margin-top: 30px;
+}
+
+.store-no-1, .store-no-2, .store-no-3, .store-no-4, .store-no-5, .store-no-6, .store-no-7, .store-no-8, .store-no-9, .store-no-10, .store-no-11{
+    padding: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.h5{
+    font-size: 15px !important;
+    font-weight: 700 !important;
+}
+
+.p{
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.not-saving-notice{
+    background-color: #ffff70;
+    padding: 10px;
+    padding-left: 14px;
+    margin-bottom: 30px;
+    margin-left: -7px;
+}
+
+.para{
+    color: #a9990d;
+    font-size: 12px;
+}
+
+.info{
+    color: #a9990d !important;
+    font-size: 12px;
+    padding-right: 4px;
+}

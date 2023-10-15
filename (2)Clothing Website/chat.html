@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Images/website-icon.avif">
+  <title>Customer Care</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chat.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+  </link>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="Notice">
+    <div class="imp-notice"></div>
+    <p class="imp-notice-p">Notice: This website is built for entertainment purpose only. This is not the official
+      website for buying clothes.</p>
+  </div>
+
+  <h3 class="warning">
+    This Website is only built for a mobile phone, it won't work on any device above 414px of Resolution.
+  </h3>
+
+  <nav class="navbar">
+    <a href="javascript:history.back()" class="back-page">
+      <i class="bi bi-arrow-left arrow-left-key"></i>
+    </a>
+    <div class="navbar-logo">
+      <img src="Images/navbar-logo.jpg" class="navbarlogo" alt="">
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="chat-container">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+        <div id="chatContainer">
+          <div class="card">
+            <div class=" customer-care-info">
+              <div class="d-flex">
+                <img class="user-profile-chat me-4" src="Images/customer_staff-img.png" alt=""
+                  id="selected-user-profile">
+                <div>
+                  <p id="Customer-Care">Customer Care</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="user-messages">
+              <div id="chat-box" class="chat-box">
+                <div id="right-message"></div>
+                <div class="message-box left-message my-message mb-2">
+                  None of your messages will be saved nor seen by anyone as this is not an active website. 
+                  <br />
+                </div>
+                <div class="message-box left-message my-message mb-2">
+                  Hello, How may we assist you?
+                  <br />
+                </div>
+              </div>
+              <!-- <input id="message-input" class="form-control" type="text" placeholder="Enter your message"> -->
+              <input type="text" id="message-input" placeholder="Enter your message" class="chat-input">
+              <button class="send-btn" onclick="sendText()"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="credits">
+    <div class="rights">
+      <p>Malaika. All rights reserved &copy; 2023</p>
+    </div>
+    <div class="made-by">
+      <p>Made with <i class="fa-solid fa-heart"></i> by <a href="https://www.github.com/Mudasssirr">Mudassir Awan</a>
+      </p>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="app.js"></script>
+  <script src="chat.js"></script>
+</body>
+
+</html>

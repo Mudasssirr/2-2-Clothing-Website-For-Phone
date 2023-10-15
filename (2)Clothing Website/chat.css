@@ -1,0 +1,143 @@
+/* FOR CHAT PAGE */
+
+.navbar {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -5px;
+}
+
+.arrow-left-key {
+    font-size: 20px !important;
+    cursor: pointer;
+}
+
+
+.arrow-left-key:active {
+    opacity: 0.7;
+}
+
+.chat-container {    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 19px !important;
+    margin-bottom: 25px;
+}
+
+.message-box {
+    max-width: 95%;
+    background-color: lightgray;
+    padding-left: 7px;
+    padding-top: 6px;
+    padding-right: 8px;
+    color: black;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.my-message{
+    background-color: darkgrey;
+    max-width: 95% !important;
+    padding-bottom: 5px;
+}
+
+.right-message {
+    background-color: lightgray;
+    color: #141414;
+    margin-left: auto;
+}
+
+.form-control{
+    width: 87% !important;
+    font-size: 13px !important;
+    padding: 20px 0.75rem !important;
+}
+
+.send-btn {
+    background-color: #141414;
+    width: 15%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+    border: 1px solid black;
+    position: absolute;
+    right: 0px;
+    margin-top: -40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.send-btn:active{
+    opacity: 0.7;
+}
+
+.bi-send-fill{
+    color: #fff !important;
+}
+
+.chat-box {
+    padding: 10px;
+    height: 400px;
+    overflow: auto;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.user-profile-chat {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.message-box>span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.user-container {
+    position: relative;
+}
+
+.customer-care-info{
+    padding: 15px !important;
+    flex: 1 1 auto;
+    min-height: 1px;
+}
+
+#Customer-Care{
+    margin-left: -12px;
+    margin-top: 15px;
+}
+
+.user-messages{
+    flex: 1 1 auto;
+    min-height: 1px;
+}
+
+.chat-input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 3px 5px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    border: none;
+    border: 1px solid darkgrey;
+}

@@ -1,0 +1,107 @@
+/* HOME MAIN PAGE */
+
+.home-main-img {
+    width: 100%;
+}
+
+.home-heading {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.home-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.row>div {
+    width: 48%;
+}
+
+.tableware, .decorative-objects, .cushions, .bathnme, .candles, .jahnamaz{
+    width: 110% !important;
+    cursor: pointer;
+}
+
+.beach{
+    width: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+.decorative-objects, .bathnme, .jahnamaz{
+    margin-left: -15px;
+}
+
+/* .seventh-img {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+} */
+
+.home-links{
+    font-size: 14px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.home-link1:hover{
+    color: red;
+    cursor: pointer; 
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.home-link2:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.home-link3:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.home-link4:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+.home-link5:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.home-link6:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+/* .home-link7:hover{
+    color: red;
+    cursor: pointer;
+} */
+
+.home-link2, .home-link4, .home-link6{
+    margin-left: -16px;
+}
+
+.animate__animated{
+    animation-duration: 2s !important;
+}

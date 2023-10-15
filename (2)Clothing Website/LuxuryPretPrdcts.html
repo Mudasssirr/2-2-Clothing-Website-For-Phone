@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Images/website-icon.avif">
+  <title>Luxury Pret Product</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="product-details.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+  </link>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="Notice">
+    <div class="imp-notice"></div>
+    <p class="imp-notice-p">Notice: This website is built for entertainment purpose only. This is not the official
+      website for buying clothes.</p>
+  </div>
+
+  <h3 class="warning">
+    This Website is only built for a mobile phone, it won't work on any device above 414px of Resolution.
+  </h3>
+
+  <nav class="navbar">
+    <a href="javascript:history.back()" class="back-page">
+      <i class="bi bi-arrow-left arrow-left-key"></i>
+  </a>
+    <div class="navbar-logo">
+        <img src="Images/navbar-logo.jpg" class="navbarlogo" alt="">
+    </div>
+</nav>
+
+   <div id="Luxury-Pret-product-details">
+
+   </div>
+
+   <a href="chat.html"><div class="chat-with-us" id="chat-with-us">
+    <i class="bi bi-chat-left-text-fill chat-icon" title="Chat with Us"></i>
+  </div></a>
+
+  <footer class="footer">
+    <div class="newsletter">
+        <h6>SIGNUP FOR OUR <span>
+            <h4 class="newsletter-heading">NEWSLETTER</h4>
+          </span></h6>
+        <div class="newsletter-signup">
+          <input type="text" name="" id="newsletter-email" class="newsletter-input" placeholder="Enter Email">
+          <button class="news-input-btn" onclick="validateEmail()">SIGN UP</button>
+        </div>
+        <p id="error-message-newsletter">Please provide a valid Email Address</p>
+    </div>
+    <div class="follow-icons">
+      <h5 class="follow-heading">FOLLOW US</h5>
+      <div class="follow-us">
+        <i class="fa-brands fa-facebook facebook" title="Facebook"></i>
+        <i class="fa-brands fa-instagram instagram" title="Instagram"></i>
+        <i class="fa-brands fa-twitter twitter" title="Twitter"></i>
+        <i class="fa-solid fa-envelope email" title="Email"></i>
+      </div>
+    </div>
+    <div class="footer-content">
+      <div class="footer-link">
+        <button class="dropdown-toggle" type="button" data-toggle="collapse" data-target="#aboutDropdown"
+          aria-expanded="false">
+          <div class="headings">
+            <h6>COMPANY</h6>
+          </div>
+          <div class="signs">
+            <span class="plus-minus">+</span>
+          </div>
+        </button>
+        <div class="collapse" id="aboutDropdown">
+          <ul class="dropdown-content">
+            <a href="shipping-info.html" class="links">
+              <li>
+                <p class="footer-link2">Shippinng Information</p>
+              </li>
+            </a>
+            <a href="return-n-exchange.html" class="links">
+              <li>
+                <p class="footer-link3">Return & Exchange</p>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-content">
+      <div class="footer-link">
+        <button class="dropdown-toggle" type="button" data-toggle="collapse" data-target="#aboutDropdown2"
+          aria-expanded="false">
+          <div class="headings">
+            <h6>HELP</h6>
+          </div>
+          <div class="signs">
+            <span class="plus-minus">+</span>
+          </div>
+        </button>
+        <div class="collapse" id="aboutDropdown2">
+          <ul class="dropdown-content">
+            <a href="track-order.html" class="links">
+              <li>
+                <p class="footer-link1">Track your Order
+                <p>
+              </li>
+            </a>
+            <a href="about-us.html" class="links">
+              <li>
+                <p class="footer-link2">About Us
+                <p>
+              </li>
+            </a>
+            <a href="find-store.html" class="links">
+              <li>
+                <p class="footer-link3">Store Locator
+                <p>
+              </li>
+            </a>
+            <a href="terms-conditions.html" class="links">
+              <li>
+                <p class="footer-link4">Terms & Conditions
+                <p>
+              </li>
+            </a>
+            <a href="privacy-policy.html" class="links">
+              <li>
+                <p class="footer-link5">Privacy Policy
+                <p>
+              </li>
+            </a>
+            <a href="FAQs.html" class="links">
+              <li>
+                <p class="footer-link6">FAQs
+                <p>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-content">
+      <div class="footer-link">
+        <button class="dropdown-toggle" type="button" data-toggle="collapse" data-target="#aboutDropdown3"
+          aria-expanded="false">
+          <div class="headings">
+            <h6>CONTACT US</h6>
+          </div>
+          <div class="signs">
+            <span class="plus-minus">+</span>
+          </div>
+        </button>
+        <div class="collapse" id="aboutDropdown3">
+          <ul class="dropdown-content">
+            <div class="links">
+              <li>
+                <p class="footer-linkemail">Email: <a href="mailto:muhammadmudassir.090@gmail.com">Email me</a></p>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-content">
+      <div class="footer-link">
+        <button class="dropdown-toggle" type="button" data-toggle="collapse" data-target="#aboutDropdown4"
+          aria-expanded="false">
+          <div class="headings">
+            <h6>INFORMATION</h6>
+          </div>
+          <div class="signs">
+            <span class="plus-minus">+</span>
+          </div>
+        </button>
+        <div class="collapse" id="aboutDropdown4">
+          <ul class="dropdown-content">
+            <a href="privacy-policy.html" class="links">
+              <li>
+                <p class="footer-link1">Privacy & Cookie</p>
+              </li>
+            </a>
+            <a href="track-order.html" class="links">
+              <li>
+                <p class="footer-link2">Order & Returns</p>
+              </li>
+            </a>
+            <a href="return-n-exchange.html" class="links">
+              <li>
+                <p class="footer-link3">Search Terms</p>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="credits">
+      <div class="rights">
+        <p>Malaika. All rights reserved &copy; 2023</p>
+      </div>
+      <div class="made-by">
+        <p>Made with <i class="fa-solid fa-heart"></i> by <a href="https://www.github.com/Mudasssirr">Mudassir Awan</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <script src="LuxuryPret.js"></script>
+    <script type="module" src="LuxuryPretPrdcts.js"></script>
+</body>
+
+</html>
